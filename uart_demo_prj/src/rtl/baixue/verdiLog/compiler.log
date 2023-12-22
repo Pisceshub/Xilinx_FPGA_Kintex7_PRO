@@ -1,0 +1,13 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -2001
+    tb.sv
+    -sveriolg
+*Warning* Unknown argument -sveriolg
+
+
+Highest level modules:
+tb
+
+Total	0 error(s),   1 warning(s)

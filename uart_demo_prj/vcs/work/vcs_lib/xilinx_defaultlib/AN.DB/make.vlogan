@@ -1,0 +1,42 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -l ../../vcs/work/log_file/compile.log +v2k +incdir+../../vcs/macro -sverilog +define+FSDB +define+SIMULATION_EN -work xilinx_defaultlib
+
+all :		_VCSgd_oQcyUc_1.db \
+	_VCSgd_yzVHBd_1.db \
+	_VCSgd_k0vwMb_1.db \
+	_VCSgd_Ocy5Nb_1.db \
+	_VCSgd_IGpuE_1.db \
+	_VCSgd_QMJG0d_1.db \
+	_VCSgd_zMQzfb_1.db \
+
+
+
+_VCSgd_oQcyUc_1.db :	../../src/tb/uart_top_tb.v 
+		${VLOGAN}  ${VLOGAN_OPT} ../../src/tb/uart_top_tb.v
+
+
+_VCSgd_yzVHBd_1.db :	../../src/rtl/uart_rx.v 
+		${VLOGAN}  ${VLOGAN_OPT} ../../src/rtl/uart_rx.v
+
+
+_VCSgd_k0vwMb_1.db :	../../src/rtl/uart_top.v 
+		${VLOGAN}  ${VLOGAN_OPT} ../../src/rtl/uart_top.v
+
+
+_VCSgd_Ocy5Nb_1.db :	../../src/rtl/uart_tx.v 
+		${VLOGAN}  ${VLOGAN_OPT} ../../src/rtl/uart_tx.v
+
+
+_VCSgd_IGpuE_1.db :	../../src/ipcore/clk_wiz_0/clk_wiz_0.v 
+		${VLOGAN}  ${VLOGAN_OPT} ../../src/ipcore/clk_wiz_0/clk_wiz_0.v
+
+
+_VCSgd_QMJG0d_1.db :	../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v 
+		${VLOGAN}  ${VLOGAN_OPT} ../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v
+
+
+_VCSgd_zMQzfb_1.db :	../../src/glbl/glbl.v 
+		${VLOGAN}  ${VLOGAN_OPT} ../../src/glbl/glbl.v
+
+

@@ -1,0 +1,6 @@
+set source_files  [list 
+../../src/rtl/uart_rx.v 
+../../src/rtl/uart_top.v 
+../../src/rtl/uart_tx.v 
+]
+Error: unknown command '../../src/rtl/uart_rx.v' (CMD-005)

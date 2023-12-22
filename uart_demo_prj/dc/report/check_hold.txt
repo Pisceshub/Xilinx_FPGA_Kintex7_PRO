@@ -1,0 +1,80 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : uart_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 19 14:37:28 2023
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: uart_tx_inst/tx_en_d0_reg
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_tx_inst/tx_en_d1_reg
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_top           tsmc090_wl10          typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_tx_inst/tx_en_d0_reg/CK (DFFRQX2)                  0.00       0.00 r
+  uart_tx_inst/tx_en_d0_reg/Q (DFFRQX2)                   0.18       0.18 f
+  uart_tx_inst/tx_en_d1_reg/D (DFFRQX2)                   0.00       0.18 f
+  data arrival time                                                  0.18
+
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_tx_inst/tx_en_d1_reg/CK (DFFRQX2)                  0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+  Startpoint: uart_rx (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/rxd_d0_reg
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUTS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_top           tsmc090_wl10          typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   12.00      12.00 f
+  uart_rx (in)                                            0.03      12.03 f
+  uart_rx_inst/uart_rx (uart_rx_CLOCK_FREQ50000000_UART_BPS10000000)
+                                                          0.00      12.03 f
+  uart_rx_inst/rxd_d0_reg/D (DFFRQX2)                     0.00      12.03 f
+  data arrival time                                                 12.03
+
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/rxd_d0_reg/CK (DFFRQX2)                    0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                -12.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.03
+
+
+1

@@ -1,0 +1,56 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "uart_top_tb": [
+        "uart_top_tb",
+        "c4uEW",
+        "module",
+        2
+    ],
+    "glbl": [
+        "glbl",
+        "WZg7r",
+        "module",
+        3
+    ],
+    "uart_tx": [
+        "uart_tx",
+        "m9BkM",
+        "module",
+        8
+    ],
+    "UNISIMS_VER.IBUF": [
+        "UNISIMS_VER0x2eIBUF",
+        "xE6gF",
+        "module",
+        4
+    ],
+    "UNISIMS_VER.MMCME2_ADV": [
+        "UNISIMS_VER0x2eMMCME2_ADV",
+        "ZQ1bg",
+        "module",
+        5
+    ],
+    "UNISIMS_VER.BUFG": [
+        "UNISIMS_VER0x2eBUFG",
+        "xUtzU",
+        "module",
+        6
+    ],
+    "uart_rx": [
+        "uart_rx",
+        "BeJhp",
+        "module",
+        7
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        9
+    ]
+}

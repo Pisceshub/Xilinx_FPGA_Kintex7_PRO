@@ -1,0 +1,101 @@
+##########################################################################
+#
+# Application : compile_simlib (2019.1)
+# File name   : compile_simlib.log
+#
+# #########################################################################
+INFO: [Vivado 12-4753] Extracting data from the IP repository...(this may take a while, please wait)...
+........................................................................
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe0_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe00_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe01_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe10_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe11_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe12_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe13_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe2_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe22_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_xpipe23_wires.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad0_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad00_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad01_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad10_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad11_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad12_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad13_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad2_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad22_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'ttcl/versal_cips_v1_0_0_gt_quad23_inst.vh' (versal_cips,xilinx.com:ip:versal_cips:1.0)
+...............................
+..........................................................
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axis_cap_ctrl_v1_0_rfs.v' (axis_cap_ctrl,xilinx.com:ip:axis_cap_ctrl:1.0)
+.............................................
+..................................
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axi_interface_monitor_v1_0_vl_rfs.v' (axi_interface_monitor,xilinx.com:ip:axi_interface_monitor:1.0)
+.....................................................................
+......................................................
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axis_ila_txns_cntr_v1_0_vl_rfs.v' (axis_ila_txns_cntr,xilinx.com:ip:axis_ila_txns_cntr:1.0)
+......
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axis_ila_intf_v1_0_rfs.v' (axis_ila_intf,xilinx.com:ip:axis_ila_intf:1.0)
+.
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/verilog/axis_mu_v1_0_0_mu_pkg.vh' (axis_mu,xilinx.com:ip:axis_mu:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axis_mu_v1_0_rfs.v' (axis_mu,xilinx.com:ip:axis_mu:1.0)
+..........................................
+.......
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/verilog/axis_itct_v1_0_0_axis_itct_ports.vh' (axis_itct,xilinx.com:ip:axis_itct:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axis_itct_v1_0_rfs.v' (axis_itct,xilinx.com:ip:axis_itct:1.0)
+.
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/verilog/axis_mem_v1_0_0_probe_ports.vh' (axis_mem,xilinx.com:ip:axis_mem:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/verilog/axis_mem_v1_0_0_probe_width.vh' (axis_mem,xilinx.com:ip:axis_mem:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/verilog/axis_mem_v1_0_0_lib_fn.vh' (axis_mem,xilinx.com:ip:axis_mem:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/verilog/axis_mem_v1_0_0_ver.vh' (axis_mem,xilinx.com:ip:axis_mem:1.0)
+
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axis_mem_v1_0_rfs.v' (axis_mem,xilinx.com:ip:axis_mem:1.0)
+......................................
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axis_dbg_sync_v1_0_vl_rfs.v' (axis_dbg_sync,xilinx.com:ip:axis_dbg_sync:1.0)
+............................................
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/trace_hub_v1_0_vl_rfs.v' (trace_hub,xilinx.com:ip:trace_hub:1.0)
+.............
+............
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axi_stream_monitor_v1_0_vl_rfs.v' (axi_stream_monitor,xilinx.com:ip:axi_stream_monitor:1.0)
+..
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axis_dbg_stub_v1_0_rfs.v' (axis_dbg_stub,xilinx.com:ip:axis_dbg_stub:1.0)
+..
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/accelerator_monitor_v1_0_vl_rfs.v' (accelerator_monitor,xilinx.com:ip:accelerator_monitor:1.0)
+.......................................................................................
+.......................................................................................................
+.......................................................................................................
+.......................................................................................................
+.....................................
+WARNING: [setup_ip_static_library-Tcl-22] Associated library not defined for 'hdl/axis_dbg_stub_v1_0_rfs.v' (axis_dbg_stub,xilinx.com:ip:axis_dbg_stub:1.0)
+..................................................................
+.............................................................................
+INFO: [setup_ip_static_library-Tcl-23] Data extracted from repository. Inspected 553 IP libraries.
+
+INFO: [Vivado 12-5496] Finding simulator executables and checking version...
+ERROR: [Vivado 12-3754] Failed to find the 'modelsim' simulator executable. Make sure to set the 'modelsim' installation environment and retry this command to compile the libraries for this simulator. For more information on tool setup refer 'modelsim' user guide.
+Library compilation for 'modelsim' ignored.

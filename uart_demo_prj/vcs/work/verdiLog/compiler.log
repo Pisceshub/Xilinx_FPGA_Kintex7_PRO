@@ -1,0 +1,33 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f ../../vcs/work/vcs_all_file.list
+        ../../src/tb/uart_top_tb.v
+        ../../src/rtl/uart_rx.v
+        ../../src/rtl/uart_top.v
+        ../../src/rtl/uart_tx.v
+        ../../src/ipcore/clk_wiz_0/clk_wiz_0.v
+        ../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v
+        ../../src/glbl/glbl.v
+    -2001
+    -sveriolg
+*Warning* Unknown argument -sveriolg
+
+
+Highest level modules:
+uart_top_tb
+glbl
+
+
+*Error* view IBUF is not defined for instance clkin1_ibufg
+"../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v", 82: 
+
+*Error* view MMCME2_ADV is not defined for instance mmcm_adv_inst
+"../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v", 139: 
+
+*Error* view BUFG is not defined for instance clkf_buf
+"../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v", 188: 
+
+*Error* view BUFG is not defined for instance clkout1_buf
+"../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v", 197: 
+Total	4 error(s),   1 warning(s)

@@ -1,0 +1,9 @@
+Command Line: /home/synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -f ../../vcs/work/vcs_all_file.list -2001 -sveriolg -ssf simv.fsdb
+uname(Linux IC_EDA 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64)
+type= DS_SCOPE element= 1 field= 1
+VERILOG uart_top_tb
+VERILOG uart_top_inst
+-----
+second field= DebussyLib
+third field= uart_top
+au time 20.194792 4.089612 0.694451 delta 597630976 597630976 total 1022717952 1022717952

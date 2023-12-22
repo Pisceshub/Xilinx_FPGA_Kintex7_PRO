@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : uart_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 19 14:37:28 2023
+****************************************
+
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   uart_rx                      0.00           0.01          -0.01  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      1                  -0.01  
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   uart_top                 10000.00       33163.99       -23163.99 (VIOLATED)
+
+
+1

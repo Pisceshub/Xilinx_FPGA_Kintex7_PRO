@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : uart_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 19 14:37:28 2023
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/ICer/my_ic/ic_libs/TSMC_90/aci/sc-x/synopsys/typical.db)
+
+Number of ports:                           93
+Number of nets:                           369
+Number of cells:                          254
+Number of combinational cells:            178
+Number of sequential cells:                72
+Number of macros/black boxes:               0
+Number of buf/inv:                         22
+Number of references:                       3
+
+Combinational area:                857.304006
+Buf/Inv area:                       52.920002
+Noncombinational area:            1133.193604
+Macro/Black Box area:                0.000000
+Net Interconnect area:           31173.492859
+
+Total cell area:                  1990.497611
+Total area:                      33163.990470
+1

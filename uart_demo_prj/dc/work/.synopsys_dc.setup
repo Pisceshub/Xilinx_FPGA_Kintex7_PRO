@@ -1,0 +1,69 @@
+echo "***********************************************"
+echo "*****Start load .synopsys_dc.setup*************"
+echo "***********************************************"
+
+########### work_Path###############
+set     DC_WORK_PATH                ../..
+set     SYN_ROOT_PATH               $DC_WORK_PATH/dc       
+set     RTL_PATH                    $DC_WORK_PATH/src/rtl 
+set     CONFIG_PATH                 $SYN_ROOT_PATH/config
+set     SCRIPT_PATH                 $SYN_ROOT_PATH/script
+set     MAPPED_PATH                 $SYN_ROOT_PATH/mapped
+set     REPORT_PATH                 $SYN_ROOT_PATH/report
+set     UNMAPPED_PATH               $SYN_ROOT_PATH/unmapped
+
+
+#define work directory
+set     WORK_PATH                   $SYN_ROOT_PATH/work
+
+###########DC_software_Path##############
+set     DC_PATH                     /home/synopsys/syn/O-2018.06-SP1      
+define_design_lib work              -path $WORK_PATH
+
+#############Symbol_Path################## 
+set SYMBOL_PATH                     /home/ICer/my_ic/ic_libs/TSMC_90/aci/sc-x/symbols/synopsys  
+#############Lib_Path######################
+set LIB_PATH                        /home/ICer/my_ic/ic_libs/TSMC_90/aci/sc-x/synopsys          
+
+
+set_app_var  search_path            [list . $search_path $LIB_PATH  \
+                                            $SYMBOL_PATH $RTL_PATH  \
+                                            $SCRIPT_PATH            \
+                                            ${DC_PATH}/libraries/syn]
+
+# This variables are automatically set if you perform ultra command
+# Specify for use during optimization
+# You do not need to de anything to access the standard library
+# DC is setup to use this library by default
+#############synthetic_library######################
+set_app_var synthetic_library       [list dw_foundation.sldb standard.sldb] 
+#############target_library######################
+set_app_var target_library          [list typical.db            ]
+
+# Specify for cell resolution during link
+#############link_library######################
+set_app_var link_library            [list * ${target_library}   ]
+#############symbol_library######################
+set_app_var symbol_library          [list tsmc090.sdb ]
+
+# Source the naming rules
+
+echo "***********************************************"
+echo "*****End of load .synopsys_dc.setup*************"
+echo "***********************************************"
+
+echo "***********************************************"
+echo "*****Start source hs_name_rules.v*************"
+echo "***********************************************"
+
+echo "***********************************************"
+echo "*****Start load .synopsys_dc.setup*************"
+echo "***********************************************"
+
+###################need to search#######################
+# source -v -e ./hs_name_rules.tcl 
+
+
+echo "***********************************************"
+echo "*****End of source hs_name_rules.v*************"
+echo "***********************************************"

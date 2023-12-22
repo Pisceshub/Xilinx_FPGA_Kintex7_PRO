@@ -1,0 +1,729 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version O-2018.06-SP1 for linux64 - Jul 19, 2018 
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+***********************************************
+*****Start load .synopsys_dc.setup*************
+***********************************************
+***********************************************
+*****End of load .synopsys_dc.setup*************
+***********************************************
+***********************************************
+*****Start source hs_name_rules.v*************
+***********************************************
+***********************************************
+*****Start load .synopsys_dc.setup*************
+***********************************************
+***********************************************
+*****End of source hs_name_rules.v*************
+***********************************************
+Initializing gui preferences from file  /home/ICer/.synopsys_dv_prefs.tcl
+dc_shell>  analyze -format sverilog -vcs "-f ./dc_all_file.list"
+Running PRESTO HDLC
+Compiling source file ../../src/rtl/uart_rx.v
+Compiling source file ../../src/rtl/uart_top.v
+Compiling source file ../../src/rtl/uart_tx.v
+Compiling source file ../../src/ipcore/clk_wiz_0/clk_wiz_0.v
+Compiling source file ../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v
+Presto compilation completed successfully.
+Loading db file '/home/ICer/my_ic/ic_libs/TSMC_90/aci/sc-x/synopsys/typical.db'
+1
+dc_shell> elaborate uart_top
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/gtech.db'
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'typical'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/dw_foundation.sldb'
+Elaborated 1 design.
+Current design is now 'uart_top'.
+Information: Building the design 'clk_wiz_0'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'uart_rx' instantiated from design 'uart_top' with
+	the parameters "CLOCK_FREQ=50000000,UART_BPS=10000000". (HDL-193)
+Warning:  ../../src/rtl/uart_rx.v:72: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../../src/rtl/uart_rx.v:110: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 105 in file
+	'../../src/rtl/uart_rx.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           111            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine uart_rx_CLOCK_FREQ50000000_UART_BPS10000000 line 51 in file
+		'../../src/rtl/uart_rx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rxd_d1_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     rxd_d0_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine uart_rx_CLOCK_FREQ50000000_UART_BPS10000000 line 63 in file
+		'../../src/rtl/uart_rx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rx_flag_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine uart_rx_CLOCK_FREQ50000000_UART_BPS10000000 line 82 in file
+		'../../src/rtl/uart_rx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rx_cnt_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     bps_cnt_reg     | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine uart_rx_CLOCK_FREQ50000000_UART_BPS10000000 line 105 in file
+		'../../src/rtl/uart_rx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rx_data_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine uart_rx_CLOCK_FREQ50000000_UART_BPS10000000 line 133 in file
+		'../../src/rtl/uart_rx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    uart_rxd_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     rx_done_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'uart_tx' instantiated from design 'uart_top' with
+	the parameters "CLOCK_FREQ=50000000,UART_BPS=10000000". (HDL-193)
+Warning:  ../../src/rtl/uart_tx.v:70: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../../src/rtl/uart_tx.v:96: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 109 in file
+	'../../src/rtl/uart_tx.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           114            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine uart_tx_CLOCK_FREQ50000000_UART_BPS10000000 line 52 in file
+		'../../src/rtl/uart_tx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    tx_en_d1_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    tx_en_d0_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine uart_tx_CLOCK_FREQ50000000_UART_BPS10000000 line 64 in file
+		'../../src/rtl/uart_tx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     tx_cnt_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     bps_cnt_reg     | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine uart_tx_CLOCK_FREQ50000000_UART_BPS10000000 line 87 in file
+		'../../src/rtl/uart_tx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     tx_data_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     tx_flag_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine uart_tx_CLOCK_FREQ50000000_UART_BPS10000000 line 109 in file
+		'../../src/rtl/uart_tx.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     uart_tx_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'clk_wiz_0_clk_wiz'. (HDL-193)
+Error:  ../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v:141: value of double type is not supported in synthesis. (ELAB-379)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'clk_wiz_0_clk_wiz'. (HDL-193)
+Warning: Design 'uart_top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+dc_shell> elaborate uart_top
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Warning: Overwriting design file '/home/ICer/my_ic/uart_demo_prj/dc/work/uart_top.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'uart_top'.
+Information: Building the design 'clk_wiz_0_clk_wiz'. (HDL-193)
+Error:  ../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v:141: value of double type is not supported in synthesis. (ELAB-379)
+*** Presto compilation terminated with 1 errors. ***
+Information: Building the design 'clk_wiz_0_clk_wiz'. (HDL-193)
+Warning: Design 'uart_top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+dc_shell> elaborate uart_top[11Ganalyze -format sverilog -vcs "-f ./dc_all_file.list"[11Gelaborate uart_top[K[11Ganalyze -format sverilog -vcs "-f ./dc_all_file.list"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksource ../script/My_TOP.tcl 
+Running PRESTO HDLC
+Compiling source file ../../src/rtl/uart_rx.v
+Compiling source file ../../src/rtl/uart_top.v
+Compiling source file ../../src/rtl/uart_tx.v
+Compiling source file ../../src/ipcore/clk_wiz_0/clk_wiz_0.v
+Compiling source file ../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Warning: Overwriting design file '/home/ICer/my_ic/uart_demo_prj/dc/work/uart_top.db'. (DDB-24)
+Elaborated 1 design.
+Current design is now 'uart_top'.
+Current design is 'uart_top'.
+
+  Linking design 'uart_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (4 designs)               /home/ICer/my_ic/uart_demo_prj/dc/work/uart_top.db, etc
+  typical (library)           /home/ICer/my_ic/ic_libs/TSMC_90/aci/sc-x/synopsys/typical.db
+
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Sat Aug 19 14:37:26 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               4
+    Cells do not drive (LINT-1)                                     4
+--------------------------------------------------------------------------------
+
+Warning: In design 'uart_rx_CLOCK_FREQ50000000_UART_BPS10000000', cell 'C443' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_CLOCK_FREQ50000000_UART_BPS10000000', cell 'C444' does not drive any nets. (LINT-1)
+Warning: In design 'uart_tx_CLOCK_FREQ50000000_UART_BPS10000000', cell 'C336' does not drive any nets. (LINT-1)
+Warning: In design 'uart_tx_CLOCK_FREQ50000000_UART_BPS10000000', cell 'C337' does not drive any nets. (LINT-1)
+Writing ddc file '../../dc/unmapped/uart_top.ddc'.
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Using operating conditions 'typical' found in library 'typical'.
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : path_group
+Design : uart_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 19 14:37:26 2023
+****************************************
+
+                        Critical
+Group Name    Weight    Range
+--------------------------------------------------------------------------------
+**default**   1.00      0.00                 
+INPUTS        1.00      2.00                 
+sys_clk       5.00      2.00                 
+
+Path Group INPUTS:
+	-from    { sys_clk\
+		   sys_rst_n\
+		   uart_rx }
+
+Path Group sys_clk:
+	-to      sys_clk
+	-to      { uart_tx\
+		   en }
+	-from    { sys_clk\
+		   sys_rst_n\
+		   uart_rx }\
+	-to      { uart_tx\
+		   en }
+
+Warning: The following synthetic libraries should be added to 
+	the list of link libraries: 
+	'dw_foundation.sldb'. (UISN-26)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.1 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.1 |     *     |
+============================================================================
+
+
+Information: There are 4 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'uart_tx_CLOCK_FREQ50000000_UART_BPS10000000'
+  Processing 'uart_rx_CLOCK_FREQ50000000_UART_BPS10000000'
+  Processing 'uart_top'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'uart_tx_CLOCK_FREQ50000000_UART_BPS10000000_DW01_inc_0'
+  Processing 'uart_rx_CLOCK_FREQ50000000_UART_BPS10000000_DW01_inc_0'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    3863.9      0.00       0.0       0.0                          
+    0:00:01    3863.9      0.00       0.0       0.0                          
+    0:00:01    3863.9      0.00       0.0       0.0                          
+    0:00:01    3863.9      0.00       0.0       0.0                          
+    0:00:01    3863.9      0.00       0.0       0.0                          
+    0:00:01    2003.9      0.00       0.0       0.0                          
+    0:00:01    2003.2      0.00       0.0       0.0                          
+    0:00:01    2003.2      0.00       0.0       0.0                          
+    0:00:01    2003.2      0.00       0.0       0.0                          
+    0:00:01    1993.3      0.00       0.0       0.0                          
+    0:00:01    1993.3      0.00       0.0       0.0                          
+    0:00:01    1993.3      0.00       0.0       0.0                          
+    0:00:01    1993.3      0.00       0.0       0.0                          
+    0:00:01    1993.3      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1993.3      0.00       0.0       0.0                          
+    0:00:01    1993.3      0.00       0.0       0.0                          
+    0:00:01    1982.0      0.00       0.0       2.2                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1982.0      0.00       0.0       2.2                          
+    0:00:01    1993.3      0.00       0.0       0.0                          
+
+
+  Beginning Critical Range Optimization
+  -------------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1993.3      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 10000)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1993.3      0.00       0.0       0.0                          
+    0:00:01    1993.3      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+
+
+  Beginning Critical Range Optimization
+  -------------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1990.5      0.00       0.0       0.0                          
+    0:00:01    1990.5      0.00       0.0       0.0                          
+Loading db file '/home/ICer/my_ic/ic_libs/TSMC_90/aci/sc-x/synopsys/typical.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Writing ddc file '../../dc/mapped/uart_top.ddc'.
+Writing verilog file '/home/ICer/my_ic/uart_demo_prj/dc/mapped/uart_top.v'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ICer/my_ic/uart_demo_prj/dc/mapped/uart_top.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : uart_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 19 14:37:28 2023
+****************************************
+
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   uart_rx                      0.00           0.01          -0.01  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      1                  -0.01  
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   uart_top                 10000.00       33163.99       -23163.99 (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : uart_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 19 14:37:28 2023
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: uart_rx_inst/rx_done_reg
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: en (output port clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_top           tsmc090_wl10          typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  uart_rx_inst/rx_done_reg/CK (DFFRQX2)                   0.00       4.00 r
+  uart_rx_inst/rx_done_reg/Q (DFFRQX2)                    0.25       4.25 r
+  uart_rx_inst/rx_done (uart_rx_CLOCK_FREQ50000000_UART_BPS10000000)
+                                                          0.00       4.25 r
+  U1/Y (BUFX5)                                            0.30       4.55 r
+  en (out)                                                0.00       4.55 r
+  data arrival time                                                  4.55
+
+  clock sys_clk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             4.00      24.00
+  clock uncertainty                                      -1.00      23.00
+  output external delay                                 -12.00      11.00
+  data required time                                                11.00
+  --------------------------------------------------------------------------
+  data required time                                                11.00
+  data arrival time                                                 -4.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.45
+
+
+  Startpoint: uart_rx (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/rxd_d0_reg
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_top           tsmc090_wl10          typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             4.00       4.00
+  input external delay                                   12.00      16.00 r
+  uart_rx (in)                                            0.04      16.04 r
+  uart_rx_inst/uart_rx (uart_rx_CLOCK_FREQ50000000_UART_BPS10000000)
+                                                          0.00      16.04 r
+  uart_rx_inst/rxd_d0_reg/D (DFFRQX2)                     0.00      16.04 r
+  data arrival time                                                 16.04
+
+  clock sys_clk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             4.00      24.00
+  clock uncertainty                                      -1.00      23.00
+  uart_rx_inst/rxd_d0_reg/CK (DFFRQX2)                    0.00      23.00 r
+  library setup time                                     -0.07      22.93
+  data required time                                                22.93
+  --------------------------------------------------------------------------
+  data required time                                                22.93
+  data arrival time                                                -16.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.89
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : uart_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 19 14:37:28 2023
+****************************************
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: uart_tx_inst/tx_en_d0_reg
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_tx_inst/tx_en_d1_reg
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_top           tsmc090_wl10          typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_tx_inst/tx_en_d0_reg/CK (DFFRQX2)                  0.00       0.00 r
+  uart_tx_inst/tx_en_d0_reg/Q (DFFRQX2)                   0.18       0.18 f
+  uart_tx_inst/tx_en_d1_reg/D (DFFRQX2)                   0.00       0.18 f
+  data arrival time                                                  0.18
+
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_tx_inst/tx_en_d1_reg/CK (DFFRQX2)                  0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+  Startpoint: uart_rx (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/rxd_d0_reg
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUTS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_top           tsmc090_wl10          typical
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   12.00      12.00 f
+  uart_rx (in)                                            0.03      12.03 f
+  uart_rx_inst/uart_rx (uart_rx_CLOCK_FREQ50000000_UART_BPS10000000)
+                                                          0.00      12.03 f
+  uart_rx_inst/rxd_d0_reg/D (DFFRQX2)                     0.00      12.03 f
+  data arrival time                                                 12.03
+
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/rxd_d0_reg/CK (DFFRQX2)                    0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                -12.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.03
+
+
+1
+ 
+****************************************
+Report : area
+Design : uart_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 19 14:37:28 2023
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/ICer/my_ic/ic_libs/TSMC_90/aci/sc-x/synopsys/typical.db)
+
+Number of ports:                           93
+Number of nets:                           369
+Number of cells:                          254
+Number of combinational cells:            178
+Number of sequential cells:                72
+Number of macros/black boxes:               0
+Number of buf/inv:                         22
+Number of references:                       3
+
+Combinational area:                857.304006
+Buf/Inv area:                       52.920002
+Noncombinational area:            1133.193604
+Macro/Black Box area:                0.000000
+Net Interconnect area:           31173.492859
+
+Total cell area:                  1990.497611
+Total area:                      33163.990470
+1
+dc_shell> repor
+report_annotated_check                     report_dft_configuration                   report_power                               
+report_annotated_delay                     report_dft_connect                         report_power_calculation                   
+report_annotated_transition                report_dft_design                          report_power_domain                        
+report_app_var                             report_dft_drc_rules                       report_power_gating                        
+report_area                                report_dft_drc_violations                  report_power_pin_info                      
+report_attribute                           report_dft_equivalent_signals              report_power_switch                        
+report_attributes                          report_dft_fabric_configuration            report_pst                                 
+report_auto_ungroup                        report_dft_hierarchical_pins               report_qor                                 
+report_autofix_configuration               report_dft_insertion_configuration         report_qtm_model                           
+report_autofix_element                     report_dft_location                        report_reference                           
+report_background_jobs                     report_dft_partition                       report_resources                           
+report_bist_configuration                  report_dft_power_control                   report_retention_cell                      
+report_block_abstraction                   report_dft_signal                          report_retention_clamp_cell                
+report_boundary_cell                       report_direct_power_rail_tie               report_saif                                
+report_boundary_cell_io                    report_disable_timing                      report_scaling_lib_group                   
+report_bsd_ac_port                         report_dont_touch                          report_scan_cell_set                       
+report_bsd_buffers                         report_dp_smartgen_options                 report_scan_chain                          
+report_bsd_compliance                      report_fsm                                 report_scan_compression_configuration      
+report_bsd_configuration                   report_hierarchy                           report_scan_configuration                  
+report_bsd_instruction                     report_host_options                        report_scan_group                          
+report_bsd_linkage_port                    report_hybrid_stats                        report_scan_link                           
+report_bsd_patterns                        report_ideal_network                       report_scan_path                           
+report_bsd_power_up_reset                  report_ieee_1500_configuration             report_scan_register_type                  
+report_buffer_tree                         report_inbound_cell                        report_scan_replacement                    
+report_buffer_tree_qor                     report_inferred_opconds                    report_scan_skew_group                     
+report_bus                                 report_interclock_relation                 report_scan_state                          
+report_cache                               report_internal_loads                      report_scan_suppress_toggling              
+report_case_analysis                       report_isolate_ports                       report_scenarios                           
+report_cell                                report_isolation_cell                      report_serialize_configuration             
+report_cell_mode                           report_latch_loop_groups                   report_size_only                           
+report_check_library_options               report_level_shifter                       report_streaming_compression_configuration 
+report_clock                               report_lib                                 report_supply_net                          
+report_clock_constraint                    report_link_library_subset                 report_supply_port                         
+report_clock_fanout                        report_logicbist_configuration             report_synlib                              
+report_clock_gating                        report_min_pulse_width                     report_synthetic                           
+report_clock_gating_check                  report_mode                                report_target_library_subset               
+report_clock_timing                        report_multibit                            report_test_assume                         
+report_clock_tree                          report_multibit_banking                    report_test_model                          
+report_clocks                              report_mv_library_cells                    report_test_point_configuration            
+report_clusters                            report_mw_lib                              report_test_point_element                  
+report_compile_options                     report_name_rules                          report_test_power_modes                    
+report_compile_spg_mode                    report_names                               report_testability_configuration           
+report_constraint                          report_net                                 report_threshold_voltage_group             
+report_constraints                         report_net_fanout                          report_timing                              
+report_cross_probing                       report_ocvm                                report_timing_derate                       
+report_cross_probing_files                 report_opcond_inference                    report_timing_requirements                 
+report_crpr                                report_operating_conditions                report_top_implementation_options          
+report_datapath_gating                     report_partitions                          report_transitive_fanin                    
+report_delay_calculation                   report_pass_data                           report_transitive_fanout                   
+report_design                              report_path_budget                         report_units                               
+report_design_lib                          report_path_group                          report_use_test_model                      
+report_design_mismatch                     report_pin_map                             report_wire_load                           
+report_dft_clock_controller                report_pin_name_synonym                    report_wrapper_configuration               
+report_dft_clock_gating_configuration      report_pipeline_scan_data_configuration    report_write_lib_mode                      
+report_dft_clock_gating_pin                report_port                                
+dc_shell> report_w[Ka
+report_annotated_check       report_annotated_transition  report_area                  report_attributes            report_autofix_configuration 
+report_annotated_delay       report_app_var               report_attribute             report_auto_ungroup          report_autofix_element       
+dc_shell> report_area 
+ 
+****************************************
+Report : area
+Design : uart_top
+Version: O-2018.06-SP1
+Date   : Sat Aug 19 14:37:39 2023
+****************************************
+
+Library(s) Used:
+
+    typical (File: /home/ICer/my_ic/ic_libs/TSMC_90/aci/sc-x/synopsys/typical.db)
+
+Number of ports:                           93
+Number of nets:                           369
+Number of cells:                          254
+Number of combinational cells:            178
+Number of sequential cells:                72
+Number of macros/black boxes:               0
+Number of buf/inv:                         22
+Number of references:                       3
+
+Combinational area:                857.304006
+Buf/Inv area:                       52.920002
+Noncombinational area:            1133.193604
+Macro/Black Box area:                0.000000
+Net Interconnect area:           31173.492859
+
+Total cell area:                  1990.497611
+Total area:                      33163.990470
+1
+dc_shell> 

@@ -1,0 +1,4 @@
+debImport "-f" "../../vcs/work/vcs_all_file.list" "-2001" "-sveriolg"
+debLoadSimResult /home/ICer/my_ic/uart_demo_prj/vcs/work/simv.fsdb
+wvCreateWindow
+debExit

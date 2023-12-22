@@ -1,0 +1,20 @@
+{
+	"toolChain": "xilinx",
+	"prjName": {
+		"PL": "template"
+	},
+	"soc": {
+		"core": "cortexM3"
+	},
+	"enableShowLog": false,
+	"device": "none",
+	"library": {
+		"state": "remote",
+		"hardware": {
+			"common": [
+				"Apply/DSP/Advance/FFT/Flow_FFT_IFFT/fft.v"
+			],
+			"custom": []
+		}
+	}
+}

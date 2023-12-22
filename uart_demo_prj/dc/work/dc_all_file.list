@@ -1,0 +1,5 @@
+../../src/rtl/uart_rx.v
+../../src/rtl/uart_top.v
+../../src/rtl/uart_tx.v
+../../src/ipcore/clk_wiz_0/clk_wiz_0.v
+../../src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v

@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/ICer/my_ic/uvm/example_and_uvm_source_code/puvm/src/ch2/dut/dut.sv,1693299527,systemVerilog,,,,dut,,,,,,,,
+/home/ICer/my_ic/wild_fire/src/rtl/max11040/adc_max11040_redcfg_r_top.v,1693967996,verilog,,,,adc_max11040_regcfg_r_top,,,,,,,,
+/home/ICer/my_ic/wild_fire/src/rtl/max11040/adc_max11040_redcfg_w_top.v,1693970777,verilog,,,,adc_max11040_regcfg_w_top,,,,,,,,
+/home/ICer/my_ic/wild_fire/src/rtl/max11040/adc_max11040_regcfg_r.v,1693968224,verilog,,,,adc_max11040_regcfg_r,,,,,,,,
+/home/ICer/my_ic/wild_fire/src/rtl/max11040/adc_max11040_regcfg_w.v,1693969917,verilog,,,,adc_max11040_regcfg_w,,,,,,,,
+/home/ICer/my_ic/wild_fire/src/tb/max11040/adc_max11040_redcfg_r_top_tb.v,1693969048,verilog,,,,adc_max11040_redcfg_r_top_tb,,,,,,,,
+/home/ICer/my_ic/wild_fire/src/tb/max11040/adc_max11040_redcfg_w_top_tb.v,1693970885,verilog,,,,adc_max11040_redcfg_w_top_tb,,,,,,,,
+/home/ICer/my_ic/wild_fire/test.sv,1694001129,systemVerilog,,,,,,,,,,,,
