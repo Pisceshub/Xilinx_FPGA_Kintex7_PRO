@@ -89,7 +89,6 @@ net start sshd
 ```
 
 这是一个测试
-测试好啊
 ```
 git add .
 git commit -m "first commit"
