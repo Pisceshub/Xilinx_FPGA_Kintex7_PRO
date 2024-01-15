@@ -1,7 +1,0 @@
-#!/bin/bash
-export VCS_HOME=/home/synopsys/vcs-mx/O-2018.09-1
-export UVM_HOME=/home/ICer/my_ic/uvm/uvm_lib/uvm-1.1d
-export WORK_HOME=/home/ICer/my_ic/uvm/example_and_uvm_source_code/puvm
-export SIM_TOOL=VCS
-export NOVAS_HOME=/home/synopsys/verdi/Verdi_O-2018.09-SP2
-export PATH=/home/synopsys/vcs-mx/O-2018.09-SP2/linux64/bin/:$PATH

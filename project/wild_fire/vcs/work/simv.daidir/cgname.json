@@ -1,0 +1,170 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "FIFO": [
+        "FIFO",
+        "J3vD4",
+        "module",
+        15
+    ],
+    "udp": [
+        "udp",
+        "qbrJQ",
+        "module",
+        29
+    ],
+    "prescaler": [
+        "prescaler",
+        "Uh0GJ",
+        "module",
+        13
+    ],
+    "UNISIMS_VER.IDELAYE2_0000": [
+        "UNISIMS_VER0x2eIDELAYE2_0000",
+        "rS8uA",
+        "module",
+        24
+    ],
+    "key_filter_0000": [
+        "key_filter_0000",
+        "rYQey",
+        "module",
+        11
+    ],
+    "CORTEXM0DS": [
+        "CORTEXM0DS",
+        "sKfrj",
+        "module",
+        4
+    ],
+    "M0_tb": [
+        "M0_tb",
+        "iLDwj",
+        "module",
+        2
+    ],
+    "AHB2ADC_0000": [
+        "AHB2ADC_0000",
+        "SFpAK",
+        "module",
+        16
+    ],
+    "adc_chain": [
+        "adc_chain",
+        "ja6QC",
+        "module",
+        31
+    ],
+    "glbl": [
+        "glbl",
+        "WZg7r",
+        "module",
+        3
+    ],
+    "UNISIMS_VER.IDDR": [
+        "UNISIMS_VER0x2eIDDR",
+        "djtLn",
+        "module",
+        25
+    ],
+    "AHBDCD": [
+        "AHBDCD",
+        "djJIG",
+        "module",
+        8
+    ],
+    "AHBTIMER": [
+        "AHBTIMER",
+        "eqdQj",
+        "module",
+        12
+    ],
+    "AHBMUX": [
+        "AHBMUX",
+        "e9fCx",
+        "module",
+        9
+    ],
+    "AHB2MEM": [
+        "AHB2MEM",
+        "zkZM3",
+        "module",
+        10
+    ],
+    "AHBUART": [
+        "AHBUART",
+        "ES6yT",
+        "module",
+        14
+    ],
+    "gmii_to_rgmii": [
+        "gmii_to_rgmii",
+        "GLjuK",
+        "module",
+        22
+    ],
+    "mdio_rw_test": [
+        "mdio_rw_test",
+        "UMJKC",
+        "module",
+        20
+    ],
+    "UNISIMS_VER.IDELAYCTRL": [
+        "UNISIMS_VER0x2eIDELAYCTRL",
+        "IUpq3",
+        "module",
+        23
+    ],
+    "crc32_d8": [
+        "crc32_d8",
+        "k4bvx",
+        "module",
+        28
+    ],
+    "UNISIMS_VER.ODDR": [
+        "UNISIMS_VER0x2eODDR",
+        "hq0rn",
+        "module",
+        26
+    ],
+    "eth_ctrl": [
+        "eth_ctrl",
+        "xJIWS",
+        "module",
+        30
+    ],
+    "arp": [
+        "arp",
+        "c90JQ",
+        "module",
+        27
+    ],
+    "fsdb": [
+        "fsdb",
+        "mS0Ij",
+        "module",
+        17
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        19
+    ],
+    "spi_drive": [
+        "spi_drive",
+        "c5MeZ",
+        "module",
+        18
+    ],
+    "fifo_async_0000": [
+        "fifo_async_0000",
+        "rWVWr",
+        "module",
+        21
+    ]
+}

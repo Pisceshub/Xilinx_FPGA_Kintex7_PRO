@@ -1,0 +1,130 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    +define+FSDB
+    +define+M0_MODULE
+    +define+LED_MODULE
+    +define+SEG_MODULE
+    +define+BTN_NVIC_MODULE
+    +define+TIMER_NVIC_MODULE
+    +define+UART_MODULE
+    +define+SIMULATION_EN
+    +define+ADC_MODULE
+    -2001
+    -f /home/ICer/my_ic/wild_fire/vcs/work/vcs_all_file.list
+        /home/ICer/my_ic/wild_fire/src/tb/000.my_m0_0macro/M0_tb.sv
+        /home/ICer/my_ic/wild_fire/src/glbl/glbl.v
+        /home/ICer/my_ic/wild_fire/src/glbl/fsdb.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/define_macro.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_tx.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_rx.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/prescaler.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/key_filter.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/fifo.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/CORTEXM0DS.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/cortexm0ds_logic.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBUART.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBTIMER.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBMUX.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBDCD.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB7SEGDEC.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2MEM.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2LED.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_rx.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_tx.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/crc32_d8.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/gmii_to_rgmii.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_rx.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_tx.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth.ctrl.v
+        /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_udp_loop.v
+    +incdir+/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/
+    +incdir+/home/ICer/my_ic/wild_fire/src/tb/000.my_m0_0macro/
+    -y /home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/
+    -y /home/ICer/my_ic/wild_fire/src/tb/000.my_m0_0macro/
+    -y /home/ICer/my_ic/wild_fire/src/glbl/
+    +libext+.v
+    -ssy
+    -ssv
+
+Highest level modules:
+M0_tb
+glbl
+
+
+*Error* failed to find port 'eth_mdc' for instance 'AHBLITE_SYS_U1'
+"/home/ICer/my_ic/wild_fire/src/tb/000.my_m0_0macro/M0_tb.sv", 47: 
+
+*Error* failed to find port 'eth_mdio' for instance 'AHBLITE_SYS_U1'
+"/home/ICer/my_ic/wild_fire/src/tb/000.my_m0_0macro/M0_tb.sv", 48: 
+
+*Error* view mdio_rw_test is not defined for instance mdio_rw_test_u
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v", 538: 
+
+*Error* view clk_wiz_eth_delay_200m is not defined for instance clk_wiz_eth_delay_200m_u
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v", 553: 
+
+*Error* view BUFG is not defined for instance BUFG_inst
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 55: 
+
+*Error* view BUFIO is not defined for instance BUFIO_inst
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 61: 
+
+*Error* view IDELAYCTRL is not defined for instance IDELAYCTRL_inst
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 69: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rx_ctrl
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 82: 
+
+*Error* view IDDR is not defined for instance u_iddr_rx_ctl
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 104: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rxd
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 125: 
+
+*Error* view IDDR is not defined for instance u_iddr_rxd
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 147: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rxd
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 125: 
+
+*Error* view IDDR is not defined for instance u_iddr_rxd
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 147: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rxd
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 125: 
+
+*Error* view IDDR is not defined for instance u_iddr_rxd
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 147: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rxd
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 125: 
+
+*Error* view IDDR is not defined for instance u_iddr_rxd
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 147: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 46: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 64: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 64: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 64: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 64: 
+
+*Error* view eth_sync_fifo_2048x32b is not defined for instance u_eth_sync_fifo_2048x32b
+"/home/ICer/my_ic/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_udp_loop.v", 186: 
+Total	23 error(s),   0 warning(s)

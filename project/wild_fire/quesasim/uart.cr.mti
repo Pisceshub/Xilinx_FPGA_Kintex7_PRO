@@ -1,0 +1,43 @@
+/home/ICer/my_ic/uart_demo_prj/src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v {1 {vlog -work work -vopt -stats=none /home/ICer/my_ic/uart_demo_prj/src/ipcore/clk_wiz_0/clk_wiz_0_clk_wiz.v
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module clk_wiz_0_clk_wiz
+
+Top level modules:
+	clk_wiz_0_clk_wiz
+
+} {} {}} /home/ICer/my_ic/uart_demo_prj/src/rtl/uart_rx.v {1 {vlog -work work -vopt -stats=none /home/ICer/my_ic/uart_demo_prj/src/rtl/uart_rx.v
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module uart_rx
+
+Top level modules:
+	uart_rx
+
+} {} {}} /home/ICer/my_ic/uart_demo_prj/src/rtl/uart_top.v {1 {vlog -work work -vopt -stats=none /home/ICer/my_ic/uart_demo_prj/src/rtl/uart_top.v
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module uart_top
+
+Top level modules:
+	uart_top
+
+} {} {}} /home/ICer/my_ic/uart_demo_prj/src/ipcore/clk_wiz_0/clk_wiz_0.v {1 {vlog -work work -vopt -stats=none /home/ICer/my_ic/uart_demo_prj/src/ipcore/clk_wiz_0/clk_wiz_0.v
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module clk_wiz_0
+
+Top level modules:
+	clk_wiz_0
+
+} {} {}} /home/ICer/my_ic/uart_demo_prj/src/tb/uart_top_tb.v {1 {vlog -work work -vopt -stats=none /home/ICer/my_ic/uart_demo_prj/src/tb/uart_top_tb.v
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module uart_top_tb
+
+Top level modules:
+	uart_top_tb
+
+} {} {}} /home/ICer/my_ic/uart_demo_prj/src/rtl/uart_tx.v {1 {vlog -work work -vopt -y /home/ICer/my_ic/k7_quesasim_libs -y /home/ICer/my_ic/uart_demo_prj/src/ipcore +incdir+/home/ICer/my_ic/uart_demo_prj/src/ipcore -stats=none /home/ICer/my_ic/uart_demo_prj/src/rtl/uart_tx.v
+QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 17 2018
+-- Compiling module uart_tx
+
+Top level modules:
+	uart_tx
+
+} {} {}}

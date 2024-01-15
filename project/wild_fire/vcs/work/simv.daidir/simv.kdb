@@ -1,0 +1,15 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/ICer/my_ic/project/wild_fire/vcs/work
+SystemC=FALSE
+UUM=TRUE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+SYNOPSYS_SIM_SETUP=/home/ICer/my_ic/project/wild_fire/vcs/work/synopsys_sim.setup 
+TOP=M0_tb glbl 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

@@ -1,0 +1,3 @@
+WORK > xilinx_defaultlib
+xilinx_defaultlib:./vcs_lib/xilinx_defaultlib
+OTHERS=/home/ICer/my_ic/lib/k7_vcs_simlib/synopsys_sim.setup

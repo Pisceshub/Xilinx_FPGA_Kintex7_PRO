@@ -1,0 +1,61 @@
+Command: vlogan +v2k -work xilinx_defaultlib -l /home/ICer/my_ic/project/wild_fire/vcs/work/log_file/analysis.log \
++define+SIMULATION_EN -sverilog -f /home/ICer/my_ic/project/wild_fire/vcs/work/vcs_all_file.list \
++define+FSDB -timescale=1ns/100ps
+                         Chronologic VCS (TM)
+           Version O-2018.09-1 -- Mon Jan 15 15:32:22 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/glbl/fsdb.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/glbl/glbl.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_fifo_async.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/read_fifo_to_external_module.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_ctrl_max11040.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_regcfg_r_max11040.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_regcfg_w_max11040.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/spi_drive.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/arp_ctrl.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth.ctrl.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_rx.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_tx.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/crc32_d8.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_arp_test.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/gmii_to_rgmii.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_ctrl.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_dri.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_rw_test.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_rx.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_tx.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_udp_loop.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2LED.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2MEM.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB7SEGDEC.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBDCD.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v'
+Parsing included file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/bord_define_macro.v'.
+Back to file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v'.
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBMUX.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBTIMER.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBUART.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/CORTEXM0DS.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/cortexm0ds_logic.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/fifo.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/key_filter.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/prescaler.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_rx.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_tx.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/vcs_define_macro.v'
+Parsing design file '/home/ICer/my_ic/project/wild_fire/src/tb/000.my_m0_0macro/M0_tb.sv'
+Parsing included file '/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/vcs_define_macro.v'.
+Back to file '/home/ICer/my_ic/project/wild_fire/src/tb/000.my_m0_0macro/M0_tb.sv'.
+CPU time: .414 seconds to compile

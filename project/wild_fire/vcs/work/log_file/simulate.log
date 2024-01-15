@@ -1,0 +1,35 @@
+Command: /home/ICer/my_ic/project/wild_fire/vcs/work/simv -l /home/ICer/my_ic/project/wild_fire/vcs/work/log_file/simulate.log -k /home/ICer/my_ic/project/wild_fire/vcs/work/ucli.key +define+FSDB -cm line+cond+fsm+branch+tgl+assert -cm_name simv -cm_dir /home/ICer/my_ic/project/wild_fire/vcs/work/simv.vdb
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Jan 15 15:32 2024
+**************** Simulation Start! ****************
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file '/home/ICer/my_ic/project/wild_fire/vcs/work/simv.fsdb'
+*Verdi* : Begin traversing the scope (M0_tb), layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+simulation have done                  100 us
+simulation have done                  200 us
+simulation have done                  300 us
+simulation have done                  400 us
+simulation have done                  500 us
+simulation have done                  600 us
+simulation have done                  700 us
+simulation have done                  800 us
+simulation have done                  900 us
+simulation have done                 1000 us
+simulation have done                 1100 us
+**************** Simulation Finish! ****************
+$finish called from file "/home/ICer/my_ic/project/wild_fire/src/glbl/fsdb.v", line 8.
+$finish at simulation time              1200000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1200000 ps
+CPU Time:     60.660 seconds;       Data structure size:   2.2Mb
+Mon Jan 15 15:33:22 2024

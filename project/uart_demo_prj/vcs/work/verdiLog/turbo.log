@@ -1,0 +1,4 @@
+Command Line: /home/synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -f ../../vcs/work/vcs_all_file.list -2001 -sveriolg -ssf simv.fsdb
+uname(Linux IC_EDA 3.10.0-1160.105.1.el7.x86_64 #1 SMP Thu Dec 7 15:39:45 UTC 2023 x86_64)
+Disabled AskUser2 Message (Response 0): Close all windows and exit verdi?
+au time 11.377999 4.118406 0.701023 delta 386727936 386727936 total 811827200 811827200

@@ -1,0 +1,160 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_O-2018.09-SP2
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[PartialView.0]
+Title = "Extract Interactive FSM from M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[0].ADC_U.adc_chain_regcfg_r_max11040_u"
+ConnUp0 = 1 "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[1].ADC_U._ExprNet__:adc_chain_regcfg_r_max11040_u:0:cfg_r_en_h" 1 "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[1].ADC_U.adc_chain_regcfg_r_max11040_u.cfg_r_en_h" 19375 8375
+ConnUp1 = 1 "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[1].ADC_U.adc_chain_regcfg_w_max11040_u.cfg_w_finsh_h" 1 "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[1].ADC_U.cfg_r_start_h" 10875 8875
+ConnUp2 = 1 "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[0].ADC_U._ExprNet__:adc_chain_regcfg_r_max11040_u:0:cfg_r_en_h" 1 "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[0].ADC_U.adc_chain_regcfg_r_max11040_u.cfg_r_en_h" 19375 22375
+ConnUp3 = 1 "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[0].ADC_U.adc_chain_regcfg_w_max11040_u.cfg_w_finsh_h" 1 "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[0].ADC_U.cfg_r_start_h" 10875 22875
+Gate0 = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[0].ADC_U.adc_chain_regcfg_r_max11040_u.adc_chain_regcfg_r_max11040(@1):FSM0:67:183:FSM" 22500 24000 "sys_clk" "DRDYOUT_hp" "byte_cnt[7:0]" "REG_BYTE[7:0]" "adc_fifo_module_frame_finish_flag_h" "adc_frame_cnt[15:0]" \
+"ADC_SAMPLE_NUMBER[15:0]" "sys_rst_n" "cfg_r_finsh_h" "current_state[9:0]" "next_state[9:0]"
+Gate1 = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[1].ADC_U.adc_chain_regcfg_r_max11040_u.adc_chain_regcfg_r_max11040(@1):FSM0:67:183:FSM" 22500 10000 "sys_clk" "DRDYOUT_hp" "byte_cnt[7:0]" "REG_BYTE[7:0]" "adc_fifo_module_frame_finish_flag_h" "adc_frame_cnt[15:0]" \
+"ADC_SAMPLE_NUMBER[15:0]" "sys_rst_n" "cfg_r_finsh_h" "current_state[9:0]" "next_state[9:0]"
+Gate2 = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[1].ADC_U._ExprInst__:adc_chain_regcfg_r_max11040_u:1" 16000 7630 "I1"
+Gate3 = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[0].ADC_U._ExprInst__:adc_chain_regcfg_r_max11040_u:1" 16000 21630 "I1"
+Gate4 = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[1].ADC_U.adc_chain_regcfg_w_max11040_u.adc_chain_regcfg_w_max11040(@1):FSM0:94:190:FSM" 2500 6500 "start_init_cnt[7:0]" "sys_clk" "cfg_w_start_h" "DRDYOUT_hp" "byte_cnt[7:0]" "REG_BYTE[7:0]" "sys_rst_n" "current_sta\
+te[7:0]" "next_state[7:0]"
+Gate5 = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.adc_loop[0].ADC_U.adc_chain_regcfg_w_max11040_u.adc_chain_regcfg_w_max11040(@1):FSM0:94:190:FSM" 2500 20500 "start_init_cnt[7:0]" "sys_clk" "cfg_w_start_h" "DRDYOUT_hp" "byte_cnt[7:0]" "REG_BYTE[7:0]" "sys_rst_n" "current_st\
+ate[7:0]" "next_state[7:0]"
+globalInfo = "DebussyLib" 4 0 6 0 0 0 0 0 0 0 0 0 0
+bHierFSM = True
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[hb]
+postSimFile = /home/ICer/my_ic/project/wild_fire/vcs/work/simv.fsdb
+syncTime = 0
+viewport = 0 27 2554 1171 0 0 448 2552
+activeNode = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u"
+activeScope = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u"
+activeFile = "/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 164
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u"
+Scope2 = "M0_tb.AHBLITE_SYS_U1.AHB2ADC_u.read_fifo_to_external_module_u"
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-f" "/home/ICer/my_ic/project/wild_fire/vcs/work/vcs_all_file.list" "-2001" "-sveriolg" 
+invokeDir = /home/ICer/my_ic/project/wild_fire/vcs/work
+[hb.sourceTab.1]
+scope = M0_tb.AHBLITE_SYS_U1.AHB2ADC_u
+File = /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v
+Line = 165
+[nMemoryManager]
+WaveformFile = /home/ICer/my_ic/project/wild_fire/vcs/work/simv.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[schematics.0]
+viewport = 0 27 2233 280
+viewbbox = -107640 4950 139640 28150
+design = . "" DebussyLib
+schmaticId = 3
+partial = True
+partialHier = False
+partialSessionFile = PartialView.0
+annotData = AnnotData.0
+locatorSession = Locator.0
+display_port_name = False
+display_pin_name = False
+display_instance_name = False
+display_local_net_name = False
+display_complete_name = False
+display_entity_name = True
+display_arch_name = True
+display_module_name = True
+display_high_contrast = False
+display_back_annotation = False
+display_back_annotation_in_Line = False
+display_param_list = False
+auto_fit_select_set = False
+pre_select = True
+show_full_name = False
+display_short_name = True
+display_preselect_tip = False
+append_view_obj = True
+cmdToolbar = True
+msgToolbar = True
+syncTime = 0
+traceMode = Hierarchical
+originate_from = from_hier_FSM
+full_hier_partial_dis = False
+detail_rtl = False
+hide_extraneous_bus = True
+hierFlatten = False
+instrument_cell = False
+gcc_level = False
+PG_pin = True
+power_signal = True
+power_domain = True
+brighten_power_color = False
+sdc_annot = False
+hier_flatten_view = False
+auto_collapse_paths = True
+group_paths = False
+locator = True
+align_locator_right = False
+all_hier_ports = False
+VCST_path_type = 0
+verdi_type_wnd = False
+line_up_registers = False
+through_net = True
+interface_element = True
+run-time_interface_element = True
+magnifier = False
+highlight_incomplete_net = False
+quick_trace_2_point = False
+show_pass_through_net = False
+[wave.0]
+viewPort = 0 27 2554 59 172 65
+primaryWindow = TRUE
+SessionFile = /home/ICer/my_ic/project/wild_fire/vcs/work/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE

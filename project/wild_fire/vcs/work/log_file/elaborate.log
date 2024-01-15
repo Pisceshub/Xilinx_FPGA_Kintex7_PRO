@@ -1,0 +1,177 @@
+Command: vcs -full64 -debug_pp -sverilog -Mupdate -licqueue -t ps +lint=TFIPC-L +lint=PCWM \
+/home/ICer/my_ic/lib/uvm/uvm_lib/uvm-1.1d/src/dpi/uvm_dpi.cc -CFLAGS -DVCS -P /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/novas.tab \
+/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/pli.a xilinx_defaultlib.M0_tb \
+xilinx_defaultlib.glbl -cm line+cond+fsm+branch+tgl+assert -cm_name simv -cm_dir \
+/home/ICer/my_ic/project/wild_fire/vcs/work/simv.vdb -o /home/ICer/my_ic/project/wild_fire/vcs/work/simv \
+-l /home/ICer/my_ic/project/wild_fire/vcs/work/log_file/elaborate.log
+Doing common elaboration 
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Mon Jan 15 15:32:25 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       M0_tb
+       glbl
+TimeScale is 1 ps / 1 ps
+
+Lint-[TFIPC-L] Too few instance port connections
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_udp_loop.v, 186
+eth_udp_loop, "eth_sync_fifo_2048x32b u_eth_sync_fifo_2048x32b( .clk (gmii_rx_clk),  .srst ((~sys_rst_n)),  .din (rec_data),  .wr_en (rec_en),  .rd_en (tx_req),  .dout (tx_data));"
+  The above instance has fewer port connections than the module definition,
+  output port 'almost_full' is not connected,
+  output port 'almost_empty' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v, 425
+AHBLITE_SYS, "AHB2MEM uAHB2MEM( .HSEL (HSEL_MEM),  .HCLK (HCLK),  .HRESETn (HRESETn),  .HREADY (HREADY),  .HADDR (HADDR),  .HTRANS (HTRANS[1:0]),  .HWRITE (HWRITE),  .HSIZE (HSIZE),  .HWDATA (HWDATA[31:0]),  .HRDATA (HRDATA_MEM),  .HREADYOUT (HREADYOUT_MEM));"
+  The above instance has fewer port connections than the module definition,
+  output port 'LED' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v, 487
+AHBLITE_SYS, "key_filter #(.KEY_N(1)) key_filter_u1( .clk (HCLK),  .rst_n (HRESETn),  .key_in (KEY[0]),  .key_pulse (key_pulse));"
+  The above instance has fewer port connections than the module definition,
+  output port 'key_flag' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v, 535
+AHBLITE_SYS, "AHB2ADC #(.MEMWIDTH(10), .ADC_Daisy_chain_M(ADC_Daisy_chain_M), .ADC_DCN(ADC_DCN)) AHB2ADC_u( .HCLK (HCLK),  .HRESETn (HRESETn),  .HSEL (HSEL_ADC),  .HREADY (HREADY),  .HADDR (HADDR),  .HTRANS (HTRANS),  .HWRITE (HWRITE),  .HSIZE (HSIZE),  .HWDATA (HWDATA),  .HREADYOUT (HREADYOUT_ADC),  .HRDATA (HRDATA_ADC),  .DRDYOUT (DRDYOUT),  .SCLK (SCLK),  .MOSI (MOSI),  .MISO (MISO),  .CS (CS),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp),  .adc_to_fifo_wdata (adc_to_fifo_wdata),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt),  .external_module_rd_clk (external_module_rd_clk),  .adc_frame_flag_h (adc_frame_flag_h));"
+  The above instance has fewer port connections than the module definition,
+  output port 'adc_fifo_module_data_valid_hp' is not connected,
+  output port 'adc_fifo_module_dataout' is not connected.
+
+
+Lint-[TFIPC-L] Too few instance port connections
+/home/ICer/my_ic/project/wild_fire/src/tb/000.my_m0_0macro/M0_tb.sv, 61
+M0_tb, "AHBLITE_SYS #(.ADC_Daisy_chain_M(ADC_Daisy_chain_M), .ADC_DCN(ADC_DCN)) AHBLITE_SYS_U1( .sys_clk (sys_clk),  .sys_rst_n (sys_rst_n),  .key (key),  .led (led),  .DRDYOUT (DRDYOUT),  .SCLK (SCLK),  .MOSI (MOSI),  .MISO (MISO),  .CS (CS),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp),  .adc_to_fifo_wdata (adc_to_fifo_wdata),  .adc_frame_flag_h (adc_frame_flag_h),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt),  .external_module_rd_clk (external_module_rd_clk),  .rx (rx),  .tx (tx));"
+  The above instance has fewer port connections than the module definition,
+  output port 'eth1_rst_n' is not connected,
+  output port 'eth1_mdc' is not connected,
+  inout port 'eth1_mdio' is not connected,
+  input port 'eth1_rxc' is not connected,
+  input port 'eth1_rxc_ctl' is not connected,
+  input port 'eth1_rxd' is not connected,
+  output port 'eth1_txc' is not connected,
+  output port 'eth1_txc_ctl' is not connected,
+  output port 'eth1_txd' is not connected.
+
+
+Note-[VCM-NOCOV-ENC] Skipping Encrypted Hierarchies
+  Some modules are encrypted (partially/fully) and hence VCS does not monitor 
+  all the instance hierarchies of the design for coverage.
+  Additionally there are fully encrypted modules in files : 
+  /home/ICer/my_ic/project/wild_fire/src/ipcore/eth_sync_fifo_2048x32b/hdl/fifo_generator_v13_2_rfs.v.
+  Please refer to coverage user-guide for more details.
+
+
+Warning-[IWNF] Implicit wire has no fanin
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v, 600
+  Implicit wire 'eth_delay_200m_clk' does not have any driver, please make 
+  sure this is intended.
+
+
+Lint-[PCWM-L] Port connection width mismatch
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v, 161
+" adc_chain #(ADC_DCN, , ADC_CFGMEM_N, WRCR_N, WDRCR_N, WSICR_N, ) adc_loop[0].ADC_U( .sys_clk (HCLK),  .sys_rst_n (HRESETn),  .ADC_WCFG_STATE (ADC_CFG_MEM[0]),  .ADC_RCFG_STATE (ADC_CFG_MEM[1]),  .ADC_CFG (ADC_CFG_MEM[((32 + (ADC_CFGMEM_N * (0 + 1))) - 1):(32 + (ADC_CFGMEM_N * 0))]),  .DRDYOUT_l (DRDYOUT[0]),  .SCLK (SCLK[0]),  .MOSI (MOSI[0]),  .MISO (MISO[0]),  .CS_l (CS[0]),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp[0]),  .adc_to_fifo_wdata (adc_to_fifo_wdata[(((0 + 1) * 8) - 1):(0 * 8)]),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt[(((0 + 1) * 8) - 1):(0 * 8)]),  .adc_fifo_module_frame_finish_flag_h (sync_adc_fifo_module_frame_finish_flag_h),  .adc_frame_flag_h (adc_frame_flag_h[0]));"
+  The following 8-bit expression is connected to 32-bit port 
+  "adc_to_fifo_wdata" of module "adc_chain", instance "adc_loop[0].ADC_U".
+  Expression: adc_to_fifo_wdata[(((0 + 1) * 8) - 1):(0 * 8)]
+  The expression is from module AHB2ADC, instance AHB2ADC_u 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v, 161
+" adc_chain #(ADC_DCN, , ADC_CFGMEM_N, WRCR_N, WDRCR_N, WSICR_N, ) adc_loop[1].ADC_U( .sys_clk (HCLK),  .sys_rst_n (HRESETn),  .ADC_WCFG_STATE (ADC_CFG_MEM[0]),  .ADC_RCFG_STATE (ADC_CFG_MEM[1]),  .ADC_CFG (ADC_CFG_MEM[((32 + (ADC_CFGMEM_N * (1 + 1))) - 1):(32 + (ADC_CFGMEM_N * 1))]),  .DRDYOUT_l (DRDYOUT[1]),  .SCLK (SCLK[1]),  .MOSI (MOSI[1]),  .MISO (MISO[1]),  .CS_l (CS[1]),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp[1]),  .adc_to_fifo_wdata (adc_to_fifo_wdata[(((1 + 1) * 8) - 1):(1 * 8)]),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt[(((1 + 1) * 8) - 1):(1 * 8)]),  .adc_fifo_module_frame_finish_flag_h (sync_adc_fifo_module_frame_finish_flag_h),  .adc_frame_flag_h (adc_frame_flag_h[1]));"
+  The following 8-bit expression is connected to 32-bit port 
+  "adc_to_fifo_wdata" of module "adc_chain", instance "adc_loop[1].ADC_U".
+  Expression: adc_to_fifo_wdata[(((1 + 1) * 8) - 1):(1 * 8)]
+  The expression is from module AHB2ADC, instance AHB2ADC_u 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v, 161
+" adc_chain #(ADC_DCN, , ADC_CFGMEM_N, WRCR_N, WDRCR_N, WSICR_N, ) adc_loop[2].ADC_U( .sys_clk (HCLK),  .sys_rst_n (HRESETn),  .ADC_WCFG_STATE (ADC_CFG_MEM[0]),  .ADC_RCFG_STATE (ADC_CFG_MEM[1]),  .ADC_CFG (ADC_CFG_MEM[((32 + (ADC_CFGMEM_N * (2 + 1))) - 1):(32 + (ADC_CFGMEM_N * 2))]),  .DRDYOUT_l (DRDYOUT[2]),  .SCLK (SCLK[2]),  .MOSI (MOSI[2]),  .MISO (MISO[2]),  .CS_l (CS[2]),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp[2]),  .adc_to_fifo_wdata (adc_to_fifo_wdata[(((2 + 1) * 8) - 1):(2 * 8)]),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt[(((2 + 1) * 8) - 1):(2 * 8)]),  .adc_fifo_module_frame_finish_flag_h (sync_adc_fifo_module_frame_finish_flag_h),  .adc_frame_flag_h (adc_frame_flag_h[2]));"
+  The following 8-bit expression is connected to 32-bit port 
+  "adc_to_fifo_wdata" of module "adc_chain", instance "adc_loop[2].ADC_U".
+  Expression: adc_to_fifo_wdata[(((2 + 1) * 8) - 1):(2 * 8)]
+  The expression is from module AHB2ADC, instance AHB2ADC_u 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v, 161
+" adc_chain #(ADC_DCN, , ADC_CFGMEM_N, WRCR_N, WDRCR_N, WSICR_N, ) adc_loop[3].ADC_U( .sys_clk (HCLK),  .sys_rst_n (HRESETn),  .ADC_WCFG_STATE (ADC_CFG_MEM[0]),  .ADC_RCFG_STATE (ADC_CFG_MEM[1]),  .ADC_CFG (ADC_CFG_MEM[((32 + (ADC_CFGMEM_N * (3 + 1))) - 1):(32 + (ADC_CFGMEM_N * 3))]),  .DRDYOUT_l (DRDYOUT[3]),  .SCLK (SCLK[3]),  .MOSI (MOSI[3]),  .MISO (MISO[3]),  .CS_l (CS[3]),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp[3]),  .adc_to_fifo_wdata (adc_to_fifo_wdata[(((3 + 1) * 8) - 1):(3 * 8)]),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt[(((3 + 1) * 8) - 1):(3 * 8)]),  .adc_fifo_module_frame_finish_flag_h (sync_adc_fifo_module_frame_finish_flag_h),  .adc_frame_flag_h (adc_frame_flag_h[3]));"
+  The following 8-bit expression is connected to 32-bit port 
+  "adc_to_fifo_wdata" of module "adc_chain", instance "adc_loop[3].ADC_U".
+  Expression: adc_to_fifo_wdata[(((3 + 1) * 8) - 1):(3 * 8)]
+  The expression is from module AHB2ADC, instance AHB2ADC_u 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v, 161
+" adc_chain #(ADC_DCN, , ADC_CFGMEM_N, WRCR_N, WDRCR_N, WSICR_N, ) adc_loop[4].ADC_U( .sys_clk (HCLK),  .sys_rst_n (HRESETn),  .ADC_WCFG_STATE (ADC_CFG_MEM[0]),  .ADC_RCFG_STATE (ADC_CFG_MEM[1]),  .ADC_CFG (ADC_CFG_MEM[((32 + (ADC_CFGMEM_N * (4 + 1))) - 1):(32 + (ADC_CFGMEM_N * 4))]),  .DRDYOUT_l (DRDYOUT[4]),  .SCLK (SCLK[4]),  .MOSI (MOSI[4]),  .MISO (MISO[4]),  .CS_l (CS[4]),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp[4]),  .adc_to_fifo_wdata (adc_to_fifo_wdata[(((4 + 1) * 8) - 1):(4 * 8)]),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt[(((4 + 1) * 8) - 1):(4 * 8)]),  .adc_fifo_module_frame_finish_flag_h (sync_adc_fifo_module_frame_finish_flag_h),  .adc_frame_flag_h (adc_frame_flag_h[4]));"
+  The following 8-bit expression is connected to 32-bit port 
+  "adc_to_fifo_wdata" of module "adc_chain", instance "adc_loop[4].ADC_U".
+  Expression: adc_to_fifo_wdata[(((4 + 1) * 8) - 1):(4 * 8)]
+  The expression is from module AHB2ADC, instance AHB2ADC_u 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v, 161
+" adc_chain #(ADC_DCN, , ADC_CFGMEM_N, WRCR_N, WDRCR_N, WSICR_N, ) adc_loop[5].ADC_U( .sys_clk (HCLK),  .sys_rst_n (HRESETn),  .ADC_WCFG_STATE (ADC_CFG_MEM[0]),  .ADC_RCFG_STATE (ADC_CFG_MEM[1]),  .ADC_CFG (ADC_CFG_MEM[((32 + (ADC_CFGMEM_N * (5 + 1))) - 1):(32 + (ADC_CFGMEM_N * 5))]),  .DRDYOUT_l (DRDYOUT[5]),  .SCLK (SCLK[5]),  .MOSI (MOSI[5]),  .MISO (MISO[5]),  .CS_l (CS[5]),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp[5]),  .adc_to_fifo_wdata (adc_to_fifo_wdata[(((5 + 1) * 8) - 1):(5 * 8)]),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt[(((5 + 1) * 8) - 1):(5 * 8)]),  .adc_fifo_module_frame_finish_flag_h (sync_adc_fifo_module_frame_finish_flag_h),  .adc_frame_flag_h (adc_frame_flag_h[5]));"
+  The following 8-bit expression is connected to 32-bit port 
+  "adc_to_fifo_wdata" of module "adc_chain", instance "adc_loop[5].ADC_U".
+  Expression: adc_to_fifo_wdata[(((5 + 1) * 8) - 1):(5 * 8)]
+  The expression is from module AHB2ADC, instance AHB2ADC_u 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v, 161
+" adc_chain #(ADC_DCN, , ADC_CFGMEM_N, WRCR_N, WDRCR_N, WSICR_N, ) adc_loop[6].ADC_U( .sys_clk (HCLK),  .sys_rst_n (HRESETn),  .ADC_WCFG_STATE (ADC_CFG_MEM[0]),  .ADC_RCFG_STATE (ADC_CFG_MEM[1]),  .ADC_CFG (ADC_CFG_MEM[((32 + (ADC_CFGMEM_N * (6 + 1))) - 1):(32 + (ADC_CFGMEM_N * 6))]),  .DRDYOUT_l (DRDYOUT[6]),  .SCLK (SCLK[6]),  .MOSI (MOSI[6]),  .MISO (MISO[6]),  .CS_l (CS[6]),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp[6]),  .adc_to_fifo_wdata (adc_to_fifo_wdata[(((6 + 1) * 8) - 1):(6 * 8)]),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt[(((6 + 1) * 8) - 1):(6 * 8)]),  .adc_fifo_module_frame_finish_flag_h (sync_adc_fifo_module_frame_finish_flag_h),  .adc_frame_flag_h (adc_frame_flag_h[6]));"
+  The following 8-bit expression is connected to 32-bit port 
+  "adc_to_fifo_wdata" of module "adc_chain", instance "adc_loop[6].ADC_U".
+  Expression: adc_to_fifo_wdata[(((6 + 1) * 8) - 1):(6 * 8)]
+  The expression is from module AHB2ADC, instance AHB2ADC_u 
+
+
+Lint-[PCWM-L] Port connection width mismatch
+/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v, 161
+" adc_chain #(ADC_DCN, , ADC_CFGMEM_N, WRCR_N, WDRCR_N, WSICR_N, ) adc_loop[7].ADC_U( .sys_clk (HCLK),  .sys_rst_n (HRESETn),  .ADC_WCFG_STATE (ADC_CFG_MEM[0]),  .ADC_RCFG_STATE (ADC_CFG_MEM[1]),  .ADC_CFG (ADC_CFG_MEM[((32 + (ADC_CFGMEM_N * (7 + 1))) - 1):(32 + (ADC_CFGMEM_N * 7))]),  .DRDYOUT_l (DRDYOUT[7]),  .SCLK (SCLK[7]),  .MOSI (MOSI[7]),  .MISO (MISO[7]),  .CS_l (CS[7]),  .adc_to_fifo_wen_hp (adc_to_fifo_wen_hp[7]),  .adc_to_fifo_wdata (adc_to_fifo_wdata[(((7 + 1) * 8) - 1):(7 * 8)]),  .fifo_frame_dep_cnt_time_andfremecnt (fifo_frame_dep_cnt_time_andfremecnt[(((7 + 1) * 8) - 1):(7 * 8)]),  .adc_fifo_module_frame_finish_flag_h (sync_adc_fifo_module_frame_finish_flag_h),  .adc_frame_flag_h (adc_frame_flag_h[7]));"
+  The following 8-bit expression is connected to 32-bit port 
+  "adc_to_fifo_wdata" of module "adc_chain", instance "adc_loop[7].ADC_U".
+  Expression: adc_to_fifo_wdata[(((7 + 1) * 8) - 1):(7 * 8)]
+  The expression is from module AHB2ADC, instance AHB2ADC_u 
+
+VCS Coverage Metrics Release O-2018.09-1_Full64 Copyright (c) 1991-2018 by Synopsys Inc.
+***** Warning: +memcbk/-debug_access will not enable toggle coverage on MDAs.  Please use -cm_tgl mda to enable it.
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+26 modules and 0 UDP read.
+recompiling module M0_tb
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory '/home/ICer/my_ic/project/wild_fire/vcs/work/csrc'
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_csrc0.so objs/amcQw_d.o 
+rm -f _csrc0.so
+if [ -x /home/ICer/my_ic/project/wild_fire/vcs/work/simv ]; then chmod -x /home/ICer/my_ic/project/wild_fire/vcs/work/simv; \
+fi
+g++  -o /home/ICer/my_ic/project/wild_fire/vcs/work/simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/simv.daidir/ \
+-Wl,-rpath=./simv.daidir/ -Wl,-rpath='$ORIGIN'/simv.daidir//scsim.db.dir  -rdynamic \
+-Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib -L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
+uvm_dpi.o     _88042_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so \
+rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o        \
+-lzerosoft_rt_stubs -lerrorinf -lsnpsmalloc -lvfs /home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64/pli.a \
+-lvcsnew -lsimprofile -lvirsim -lreader_common /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/libBA.a \
+-luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o \
+-ldl -lm  -lc -lpthread -ldl 
+/home/ICer/my_ic/project/wild_fire/vcs/work/simv up to date
+make[1]: Leaving directory '/home/ICer/my_ic/project/wild_fire/vcs/work/csrc'
+CPU time: 6.886 seconds to compile + .435 seconds to elab + .309 seconds to link

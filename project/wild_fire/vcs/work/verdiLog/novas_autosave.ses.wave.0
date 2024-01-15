@@ -1,0 +1,143 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 2554 59 172 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ICer/my_ic/project/wild_fire/vcs/work/simv.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 123841.237132 124114.131729
+cursor 0.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 7
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+aliasmapname adc_chain_regcfg_r_max11040.current_state
+nalias RDRDATAtoIDEL		10'b1000000000		NULL
+nalias RSICRtoRDRDATA		10'b0010000000		NULL
+nalias RDRCRtoRSICR		10'b0000100000		NULL
+nalias RRCRtoRDRCR		10'b0000001000		NULL
+nalias IDELtoRRCR		10'b0000000010		NULL
+nalias RDRDATA		10'b0100000000		NULL
+nalias RSICR		10'b0001000000		NULL
+nalias RDRCR		10'b0000010000		NULL
+nalias RRCR		10'b0000000100		NULL
+nalias IDEL		10'b0000000001		NULL
+
+aliasmapname adc_chain_regcfg_w_max11040.current_state
+nalias WSICRtoIDEL		8'b10000000		NULL
+nalias WDRCRtoWSICR		8'b00100000		NULL
+nalias WRCRtoWDRCR		8'b00001000		NULL
+nalias IDELtoWRCR		8'b00000010		NULL
+nalias WSICR		8'b01000000		NULL
+nalias WDRCR		8'b00010000		NULL
+nalias WRCR		8'b00000100		NULL
+nalias IDEL		8'b00000001		NULL
+
+aliasmapname read_fifo_to_external_module.adc_chain_one_hot
+nalias ADC_Daisy_chain_M		2'b00		NULL
+
+aliasmapname udp_tx.cur_state
+nalias st_check_sum		7'b0000010		NULL
+nalias st_eth_head		7'b0001000		NULL
+nalias st_tx_data		7'b0100000		NULL
+nalias st_idle		7'b0000001		NULL
+nalias st_preamble		7'b0000100		NULL
+nalias st_ip_head		7'b0010000		NULL
+nalias st_crc		7'b1000000		NULL
+
+aliasmapname udp_rx.cur_state
+nalias st_preamble		7'b0000010		NULL
+nalias st_ip_head		7'b0001000		NULL
+nalias st_rx_data		7'b0100000		NULL
+nalias st_idle		7'b0000001		NULL
+nalias st_eth_head		7'b0000100		NULL
+nalias st_rx_end		7'b1000000		NULL
+nalias st_udp_head		7'b0010000		NULL
+
+aliasmapname arp_tx.cur_state
+nalias st_preamble		5'b00010		NULL
+nalias st_arp_data		5'b01000		NULL
+nalias st_idle		5'b00001		NULL
+nalias st_eth_head		5'b00100		NULL
+nalias st_crc		5'b10000		NULL
+
+aliasmapname arp_rx.cur_state
+nalias st_preamble		5'b00010		NULL
+nalias st_arp_data		5'b01000		NULL
+nalias st_idle		5'b00001		NULL
+nalias st_eth_head		5'b00100		NULL
+nalias st_rx_end		5'b10000		NULL
+
+aliasmapname mdio_dri.cur_state
+nalias st_pre		6'b000010		NULL
+nalias st_addr		6'b001000		NULL
+nalias st_rd_data		6'b100000		NULL
+nalias st_idle		6'b000001		NULL
+nalias st_start		6'b000100		NULL
+nalias st_wr_data		6'b010000		NULL
+
+aliasmapname UART_TX.current_state
+nalias idle_st		2'b00		NULL
+nalias start_st		2'b01		NULL
+nalias stop_st		2'b10		NULL
+nalias data_st		2'b11		NULL
+
+aliasmapname UART_RX.current_state
+nalias idle_st		2'b00		NULL
+nalias start_st		2'b01		NULL
+nalias stop_st		2'b10		NULL
+nalias data_st		2'b11		NULL
+
+aliasmapname AHBTIMER.state1
+nalias int_gen		2'b00		NULL
+nalias int_con		2'b01		NULL
+nalias int_clr		2'b10		NULL
+
+addGroup "G1"
+addGroup "G2"
+activeDirFile "" "/home/ICer/my_ic/project/wild_fire/vcs/work/simv.fsdb"
+addSignal -h 17 /M0_tb/AHBLITE_SYS_U1/AHB2ADC_u/read_fifo_to_external_module_u/read_fifo_to_module_ren_hp[1:0]
+addSignal -h 17 -holdScope read_fifo_to_module_data_valid_hp[1:0]
+addSignal -h 17 -holdScope read_fifo_to_module_datain[63:0]
+addSignal -h 17 -holdScope adc_fifo_module_data_valid_hp
+addSignal -h 17 -holdScope adc_fifo_module_dataout[31:0]
+addSignal -h 17 -holdScope fifo_state_empty[1:0]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

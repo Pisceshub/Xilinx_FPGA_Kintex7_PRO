@@ -1,0 +1,134 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f /home/ICer/my_ic/project/wild_fire/vcs/work/vcs_all_file.list
+        /home/ICer/my_ic/project/wild_fire/src/glbl/fsdb.v
+        /home/ICer/my_ic/project/wild_fire/src/glbl/glbl.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_fifo_async.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/read_fifo_to_external_module.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_ctrl_max11040.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_regcfg_r_max11040.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_regcfg_w_max11040.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/spi_drive.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/arp_ctrl.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth.ctrl.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_rx.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_tx.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/crc32_d8.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_arp_test.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/gmii_to_rgmii.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_ctrl.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_dri.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_rw_test.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_rx.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_tx.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_udp_loop.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2LED.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2MEM.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB7SEGDEC.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBDCD.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBMUX.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBTIMER.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBUART.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/CORTEXM0DS.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/cortexm0ds_logic.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/fifo.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/key_filter.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/prescaler.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_rx.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_tx.v
+        /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/vcs_define_macro.v
+        /home/ICer/my_ic/project/wild_fire/src/tb/000.my_m0_0macro/M0_tb.sv
+    -2001
+    -sveriolg
+*Warning* Unknown argument -sveriolg
+
+
+
+*Error* illegal LHS in continuous assignment
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/read_fifo_to_external_module.v", 271: 
+
+*Error* illegal LHS in continuous assignment
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_regcfg_r_max11040.v", 258: 
+Highest level modules:
+glbl
+adc_chain_ctrl_max11040
+eth_arp_test
+AHB2LED
+AHB7SEGDEC
+M0_tb
+
+
+*Error* illegal output port on instance 'adc_chain_regcfg_r_max11040_u' port 'fifo_frame_dep_cnt_time_andfremecnt'
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain.v", 184: 
+
+*Error* view BUFG is not defined for instance BUFG_inst
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 55: 
+
+*Error* view BUFIO is not defined for instance BUFIO_inst
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 61: 
+
+*Error* view IDELAYCTRL is not defined for instance IDELAYCTRL_inst
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 69: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rx_ctrl
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 82: 
+
+*Error* view IDDR is not defined for instance u_iddr_rx_ctl
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 104: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rxd
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 125: 
+
+*Error* view IDDR is not defined for instance u_iddr_rxd
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 147: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rxd
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 125: 
+
+*Error* view IDDR is not defined for instance u_iddr_rxd
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 147: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rxd
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 125: 
+
+*Error* view IDDR is not defined for instance u_iddr_rxd
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 147: 
+
+*Error* view IDELAYE2 is not defined for instance u_delay_rxd
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 125: 
+
+*Error* view IDDR is not defined for instance u_iddr_rxd
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v", 147: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 46: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 64: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 64: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 64: 
+
+*Error* view ODDR is not defined for instance ODDR_inst
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v", 64: 
+
+*Error* view eth_sync_fifo_2048x32b is not defined for instance u_eth_sync_fifo_2048x32b
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_udp_loop.v", 186: 
+
+*Error* illegal output port on instance 'mdio_rw_test_u' port 'led'
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v", 573: 
+
+*Error* illegal output port on instance 'eth_udp_loop_u' port 'udp_tx_done'
+"/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v", 608: 
+Total	24 error(s),   1 warning(s)

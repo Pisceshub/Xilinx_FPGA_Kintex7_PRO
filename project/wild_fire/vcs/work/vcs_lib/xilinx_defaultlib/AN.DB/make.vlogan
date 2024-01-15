@@ -1,0 +1,227 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -l /home/ICer/my_ic/project/wild_fire/vcs/work/log_file/compile.log +incdir+/home/ICer/my_ic/lib/uvm/uvm_lib/uvm-1.1d/src +v2k +define+SIMULATION_EN -sverilog +define+FSDB -work xilinx_defaultlib
+
+all :		_VCSgd_R4kEp_1.db \
+	_VCSgd_dwPMT_1.db \
+	_VCSgd_zMQzfb_1.db \
+	_VCSgd_rA1J3d_1.db \
+	_VCSgd_EJJiMd_1.db \
+	_VCSgd_UsQJ8c_1.db \
+	_VCSgd_weBeUb_1.db \
+	_VCSgd_noPvqc_1.db \
+	_VCSgd_4Yhzze_1.db \
+	_VCSgd_R567kd_1.db \
+	_VCSgd_oaJqpd_1.db \
+	_VCSgd_CJ0pte_1.db \
+	_VCSgd_L7E8ub_1.db \
+	_VCSgd_cwcbsc_1.db \
+	_VCSgd_nNWRo_1.db \
+	_VCSgd_90BSqe_1.db \
+	_VCSgd_xQz9ye_1.db \
+	_VCSgd_DVvgme_1.db \
+	_VCSgd_poyR6b_1.db \
+	_VCSgd_u5NUhb_1.db \
+	_VCSgd_u4fe8d_1.db \
+	_VCSgd_BbWzMb_1.db \
+	_VCSgd_w7Iygc_1.db \
+	_VCSgd_rof66b_1.db \
+	_VCSgd_NgJtQc_1.db \
+	_VCSgd_LyiEoe_1.db \
+	_VCSgd_3Emxd_1.db \
+	_VCSgd_jEhZjd_1.db \
+	_VCSgd_pUUL5b_1.db \
+	_VCSgd_N0zvwb_1.db \
+	_VCSgd_z95r8b_1.db \
+	_VCSgd_Yaf2Ac_1.db \
+	_VCSgd_ar2ayb_1.db \
+	_VCSgd_G29yi_1.db \
+	_VCSgd_nDnf9b_1.db \
+	_VCSgd_YGhb0_1.db \
+	_VCSgd_A71hFb_1.db \
+	_VCSgd_Tl2lFb_1.db \
+	_VCSgd_ivwOGd_1.db \
+	_VCSgd_aOZsQ_1.db \
+	_VCSgd_G2HC8d_1.db \
+	_VCSgd_uqU7zb_1.db \
+	_VCSgd_0DUGfd_1.db \
+	_VCSgd_6H6yJd_1.db \
+
+
+
+_VCSgd_R4kEp_1.db :	/home/ICer/my_ic/lib/uvm/uvm_lib/uvm-1.1d/src/uvm_pkg.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/lib/uvm/uvm_lib/uvm-1.1d/src/uvm_pkg.sv
+
+
+_VCSgd_dwPMT_1.db :	/home/ICer/my_ic/project/wild_fire/src/glbl/fsdb.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/glbl/fsdb.v
+
+
+_VCSgd_zMQzfb_1.db :	/home/ICer/my_ic/project/wild_fire/src/glbl/glbl.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/glbl/glbl.v
+
+
+_VCSgd_rA1J3d_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_fifo_async.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_fifo_async.v
+
+
+_VCSgd_EJJiMd_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/read_fifo_to_external_module.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/read_fifo_to_external_module.v
+
+
+_VCSgd_UsQJ8c_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain.v
+
+
+_VCSgd_weBeUb_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_ctrl_max11040.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_ctrl_max11040.v
+
+
+_VCSgd_noPvqc_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_regcfg_r_max11040.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_regcfg_r_max11040.v
+
+
+_VCSgd_4Yhzze_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_regcfg_w_max11040.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/adc_chain_regcfg_w_max11040.v
+
+
+_VCSgd_R567kd_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/AHB2ADC.v
+
+
+_VCSgd_oaJqpd_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/spi_drive.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ADC_MODULE/spi_drive.v
+
+
+_VCSgd_CJ0pte_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/arp_ctrl.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/arp_ctrl.v
+
+
+_VCSgd_L7E8ub_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth.ctrl.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth.ctrl.v
+
+
+_VCSgd_cwcbsc_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp.v
+
+
+_VCSgd_nNWRo_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_rx.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_rx.v
+
+
+_VCSgd_90BSqe_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_tx.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/arp_tx.v
+
+
+_VCSgd_xQz9ye_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/crc32_d8.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_ARP/crc32_d8.v
+
+
+_VCSgd_DVvgme_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_arp_test.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_arp_test.v
+
+
+_VCSgd_poyR6b_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/gmii_to_rgmii.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/gmii_to_rgmii.v
+
+
+_VCSgd_u5NUhb_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_rx.v
+
+
+_VCSgd_u4fe8d_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_gmii2rgmii/rgmii_tx.v
+
+
+_VCSgd_BbWzMb_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_ctrl.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_ctrl.v
+
+
+_VCSgd_w7Iygc_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_dri.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_dri.v
+
+
+_VCSgd_rof66b_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_rw_test.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_MDIO/mdio_rw_test.v
+
+
+_VCSgd_NgJtQc_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp.v
+
+
+_VCSgd_LyiEoe_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_rx.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_rx.v
+
+
+_VCSgd_3Emxd_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_tx.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/ETH_UDP/udp_tx.v
+
+
+_VCSgd_jEhZjd_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_udp_loop.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/ETH/eth_udp_loop.v
+
+
+_VCSgd_pUUL5b_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2LED.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2LED.v
+
+
+_VCSgd_N0zvwb_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2MEM.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB2MEM.v
+
+
+_VCSgd_z95r8b_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB7SEGDEC.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHB7SEGDEC.v
+
+
+_VCSgd_Yaf2Ac_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBDCD.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBDCD.v
+
+
+_VCSgd_ar2ayb_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBLITE_SYS.v
+
+
+_VCSgd_G29yi_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBMUX.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBMUX.v
+
+
+_VCSgd_nDnf9b_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBTIMER.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBTIMER.v
+
+
+_VCSgd_YGhb0_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBUART.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/AHBUART.v
+
+
+_VCSgd_A71hFb_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/CORTEXM0DS.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/CORTEXM0DS.v
+
+
+_VCSgd_Tl2lFb_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/cortexm0ds_logic.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/cortexm0ds_logic.v
+
+
+_VCSgd_ivwOGd_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/fifo.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/fifo.v
+
+
+_VCSgd_aOZsQ_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/key_filter.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/key_filter.v
+
+
+_VCSgd_G2HC8d_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/prescaler.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/prescaler.v
+
+
+_VCSgd_uqU7zb_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_rx.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_rx.v
+
+
+_VCSgd_0DUGfd_1.db :	/home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_tx.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/rtl/000.my_m0_0macro/M0_SYS/uart_tx.v
+
+
+_VCSgd_6H6yJd_1.db :	/home/ICer/my_ic/project/wild_fire/src/tb/000.my_m0_0macro/M0_tb.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/my_ic/project/wild_fire/src/tb/000.my_m0_0macro/M0_tb.sv
+
+
